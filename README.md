@@ -31,5 +31,14 @@ FareFriend is a community-driven fare calculator designed for Mumbai auto-ricksh
 
 ---
 
-## 📁 Project Structure
+## How It Works
+1.User selects pickup and drop locations.
+
+2.System fetches route + traffic data from Google Maps API.
+
+3.Applies official fare chart with conditions (traffic, night charge, waiting time).
+
+4.Shows comparison with Ola/Uber based on distance & time.
+
+5.Users can submit actual fare they paid — this improves future estimates.
 
