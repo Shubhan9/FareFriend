@@ -1,44 +1,80 @@
-# FareFriend 🚕 | Mumbai Auto-Rickshaw Fare Estimator
+# FareFriend - Mumbai Auto-Rickshaw Fare Calculator
 
-**Avoid fare scams. Know your ride price.**
+A web-based application that helps users calculate and track auto-rickshaw fares in Mumbai, with features like real-time traffic consideration, fare history, and community-driven price reporting.
 
-FareFriend is a community-driven fare calculator designed for Mumbai auto-rickshaws. It estimates real-time fares based on distance, traffic, and night charges, and compares it with Ola/Uber prices. Users can report actual fares to help others, creating a more transparent and fair commuting experience.
+## Features
 
----
+- Accurate fare calculation based on official rates
+- Real-time traffic integration
+- User reports for actual fares paid
+- Meter tampering warnings
+- Comparison with Ola/Uber prices
+- Trip history tracking
+- Multiple passenger fare splitting
+- Night charges calculation
+- Waiting time estimation
+- Share trip details
+- Save frequently used locations
 
-## 🌟 Features
+## Project Structure
 
-- ✅ Official auto fare calculation (based on RTO-approved rates)
-- 📍 Real-time traffic integration
-- 💬 Community fare reporting system
-- 🚨 Tampering warnings if actual fare diverges significantly
-- 🚗 Compare with Ola/Uber pricing
-- 🕒 Includes night charges and waiting time
-- 🧾 Trip history + fare accuracy tracking
-- 🤝 Fare splitting for group rides
-- 📌 Save favorite pickup/drop points
-- 🔐 100% browser-based, no account/login needed
+```
+farefriend/
+├── images/              # Image assets
+│   ├── auto.jpeg
+│   ├── ola.jpeg
+│   └── uber.jpeg
+├── documentation/       # Project documentation
+│   ├── fareCalculationSystem.txt
+│   ├── app.txt
+│   └── apis.txt
+├── app.js              # Main application logic
+├── fareCalculationSystem.js  # Core fare calculation engine
+├── index.html          # Main application page
+├── about.html          # About page
+├── privacy.html        # Privacy policy page
+└── styles.css          # Application styles
+```
 
----
+## Setup Instructions
 
-## 🛠️ Tech Stack
+1. Clone or download the project files
+2. No build process required - this is a vanilla JavaScript application
+3. Open `index.html` in a modern web browser
+4. Enable location services if you want to use the current location feature
 
-- **Frontend**: HTML, CSS, Vanilla JavaScript
-- **Map & Geolocation**: Google Maps API, Leaflet.js
-- **Icons & Fonts**: Font Awesome, Google Fonts
-- **Storage**: Browser LocalStorage
-- **Documentation**: Markdown, text files
+## Dependencies
 
----
+- Font Awesome 6.4.0 (CDN)
+- Leaflet.js 1.9.4 (CDN)
+- Google Fonts - Poppins (CDN)
 
-## How It Works
-1.User selects pickup and drop locations.
+## Browser Support
 
-2.System fetches route + traffic data from Google Maps API.
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-3.Applies official fare chart with conditions (traffic, night charge, waiting time).
+## Local Storage Usage
 
-4.Shows comparison with Ola/Uber based on distance & time.
+The application uses browser local storage for:
+- Trip history
+- Saved locations
+- User preferences
+- Recent fare reports
 
-5.Users can submit actual fare they paid — this improves future estimates.
+## Contributing
 
+If you'd like to contribute:
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+
+## License
+
+MIT License - feel free to use and modify as needed.
+
+## Contact
+
+For support or queries, please reach out through the contact form on the website. 
